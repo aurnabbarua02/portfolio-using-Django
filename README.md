@@ -3,7 +3,7 @@ This is a project of the Django framework. As this webpage is dynamic, I can cha
 
 Software: Visual Studio Code
 
-Programming Language: Python
+Programming Language: Python, HTML, CSS
 
 Framework: Django
 
