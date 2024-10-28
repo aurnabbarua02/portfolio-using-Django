@@ -1,0 +1,88 @@
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar-nav .nav-link:hover{
+    background-color: white;
+    color: rgb(43, 42, 62) !important;
+}
+.navbar {
+    background-color: rgb(43, 42, 62) !important;
+}
+.navbar-toggler-icon{
+    background-color: white;
+}
+
+.footer {
+    background-color: rgb(43, 42, 62);
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+  
+.footer .footer_heading {
+    font-size: 40px;
+    font-family: "Arial";
+    color: white;
+}
+
+.footer .footer_descrip {
+    font-size: 20px;
+}
+
+.homepagesection{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.aboutmesection{
+    margin-top: 30px;
+}
+.aboutmesection h2 {
+    text-align: center;
+}
+.aboutmesection .row .col{
+    border: solid black;
+    border-right: 2px;
+    border-left: 2px;
+    border-radius: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+.aboutmesection .row .col h5{
+    padding-top: 5px;
+}
+.portfoliosection{
+    margin-top: 30px;
+}
+.portfoliosection h2, p{
+    text-align: center;
+}
+.portfoliosection .row .col{
+    border: solid black;
+    border-right: 2px;
+    border-left: 2px;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+.portfoliosection .row .col h4{
+    text-align: center;
+    padding-top: 5px;
+}
+.portfoliosection .row .col p{
+    text-align: justify;
+}
+.portfoliosection .row .col iframe{
+    width: 100%;
+}
+.contact{
+    margin-top: 30px;
+}
+.contact h2, .contact p{
+    text-align: center;
+}

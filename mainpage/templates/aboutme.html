@@ -1,0 +1,23 @@
+{% extends 'template.html' %}
+
+{% block title %} 
+About Me 
+{% endblock %}
+
+{% block content %}
+<div class="container aboutmesection">
+    <h2>About Me</h2>
+    <p>{{ description.about_description }}</p>
+    <div class="row">
+        {% for i in institution %}
+        <div class="col col-12 col-lg-4 col-md-4">
+            {% load static %}
+            <img src="{% static i.image_name %}" alt="{{ i.title }}" class="img-fluid">
+            <h5>{{ i.title }}</h5>
+            <p>{{ i.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    
+</div>
+{% endblock %}

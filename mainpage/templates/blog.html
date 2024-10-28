@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+
+{% block title %} 
+Blogs 
+{% endblock %}
+
+{% block content %}
+<div class="container mt-3">
+    <h1 class="text-center">Blog</h1>
+    <div class="row">
+        {% for i in blog %}
+        <div class="col col-12 col-md-6 col-lg-6 mt-2" style="border: solid black; border-radius: 20px; border-left: 2px; border-right: 2px; padding-top: 5px;">
+            {% load static %}
+            <img src="{% static i.image_name %}" alt="{{ i.title }}" class="img-fluid">
+            <h2>{{ i.title }}</h2>
+            <p style="text-align: justify;">{{ i.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

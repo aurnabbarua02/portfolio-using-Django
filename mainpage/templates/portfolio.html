@@ -1,0 +1,27 @@
+{% extends 'template.html' %}
+
+{% block title %} 
+Portfolio 
+{% endblock %}
+
+{% block content %}
+<div class="container portfoliosection">
+    <h2>Portfolio</h2>
+    <p>{{ description.portfolio_description }}</p>
+    <div class="row">
+        {% for i in portfolio %}
+        
+        <div class="col col-12 col-md-4 col-lg-4">
+            <iframe src="{{ i.youtube_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="projectVideo" allowfullscreen></iframe>
+                <a href="{{ i.github_link }}"
+                    class="text-decoration-none text-reset ">
+                <h4>{{ i.title }}</h4>
+                </a>
+                <p>{{ i.description }}</p>
+
+                <p><b>Programming Language:</b> {{ i.language }}<br><b>Software:</b> {{ i.software }}</p>                
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
